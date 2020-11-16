@@ -26,9 +26,9 @@ def xml_to_csv(path):
 
 def main():
     for folder in ['train','test']:
-        image_path = os.path.join(os.getcwd(), ('/content/apoderus_javanicus/' + folder))
+        image_path = os.path.join(os.getcwd(), ('apoderus_javanicus/' + folder))
         xml_df = xml_to_csv(image_path)
-        xml_df.to_csv(('/content/apoderus_javanicus/' + folder + '_labels.csv'), index=None)
+        xml_df.to_csv(('apoderus_javanicus/' + folder + '_labels.csv'), index=None)
         print('Successfully converted xml to csv.')
 
 
